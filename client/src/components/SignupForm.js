@@ -3,8 +3,6 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 
-
-// import { createUser } from '../utils/API';
 import Auth from '../utils/auth';
 
 const SignupForm = () => {
@@ -29,8 +27,9 @@ const SignupForm = () => {
     }
   }, [error]);
 
+  // Updated with Apollo/GRaphql syntax
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
+  const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
   };
 
@@ -43,6 +42,7 @@ const SignupForm = () => {
       event.stopPropagation();
     }
 
+    // Updated with Apollo/GRaphql syntax
     try {
       const { data } = await addUser({
         variables: { ...userFormData },

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Jumbotron,
   Container,
@@ -14,9 +14,9 @@ import { GET_ME } from "../utils/queries";
 import { REMOVE_BOOK } from "../utils/mutations";
 
 const SavedBooks = () => {
-const { loading, data } = useQuery(GET_ME);
-const userData = data?.me || {}
-
+  // Updated with Apollo/GRaphql syntax
+  const { loading, data } = useQuery(GET_ME);
+  const userData = data?.me || {};
 
   const [deleteBook] = useMutation(REMOVE_BOOK);
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
@@ -26,10 +26,10 @@ const userData = data?.me || {}
     if (!token) {
       return false;
     }
-console.log(bookId);
+    console.log(bookId);
     try {
-      const {data} = await deleteBook({
-        variables:{bookId}
+      const { data } = await deleteBook({
+        variables: { bookId },
       });
 
       // upon success, remove book's id from localStorage

@@ -53,9 +53,9 @@ WHEN I click on the Logout button
 THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
 ## Images 
-![Home Page](https://github.com/Jsumme1/lets-collect-books/blob/main//client/public/assets/HomePage.JPG)
-![Example Book Search](https://github.com/Jsumme1/lets-collect-books/blob/main/client/public/assets/CatsSearch.JPG)
-![Saved Books](https://github.com/Jsumme1/lets-collect-books/blob/main/client/public/assets/SavedBooks.JPG)
+![Home Page](https://github.com/Jsumme1/lets-collect-books/blob/main//client/public/HomePage.JPG)
+![Example Book Search](https://github.com/Jsumme1/lets-collect-books/blob/main/client/public/CatsSearch.JPG)
+![Saved Books](https://github.com/Jsumme1/lets-collect-books/blob/main/client/public/SavedBooks.JPG)
 
 
 ## Contributions
