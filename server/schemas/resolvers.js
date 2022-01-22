@@ -62,11 +62,11 @@ const resolvers = {
         throw new AuthenticationError ("Not logged in!");
         }
       else {
-          const updatedUser = await User.findByIdAndUpdate (
+          const updatedUser = await User.findByIdAndUpdate(
             // finds the user 
             {_id: context.user._id},
             {$pull: {savedBooks: {bookId}}},
-            {new:true}
+            {new: true}
 
           );
           return updatedUser;
